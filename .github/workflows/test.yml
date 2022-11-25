@@ -23,4 +23,3 @@ jobs:
     with:
       ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       ssh-host: ${{ secrets.SSH_HOST }}
-    
