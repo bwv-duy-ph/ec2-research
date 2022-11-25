@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => res.jsonp("OK"));
+app.get("/", (_, res) => res.jsonp({ status: "OK" }));
 
 app.use(
   "/graphql",
