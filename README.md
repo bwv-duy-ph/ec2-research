@@ -1,1 +1,1 @@
-# graphql-research
+# ec2-research

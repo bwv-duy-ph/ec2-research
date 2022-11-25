@@ -49,4 +49,4 @@ jobs:
             docker ps -q --filter ancestor=${{ secrets.DOCKER_REPO }} | xargs -r docker stop | xargs -r docker rm -f || true
             docker images -q ${{ secrets.DOCKER_REPO }} | xargs -r docker rmi -f || true
             docker system prune -f
-            docker run -d -p 8080:8080 ${{ secrets.DOCKER_REPO }}
+            docker run -d -p 8080:8080 -e DB_HOST=${{ secrets.DB_HOST }} -e DB_NAME=${{ secrets.DB_NAME }} -e DB_USERNAME=${{ secrets.DB_USERNAME }} -e DB_PASSWORD=${{ secrets.DB_PASSWORD }} ${{ secrets.DOCKER_REPO }}

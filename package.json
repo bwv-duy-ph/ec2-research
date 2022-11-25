@@ -1,9 +1,9 @@
 {
-  "name": "graphql-research",
+  "name": "ec2-research",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/phd91105/graphql-research",
-  "author": "Phạm Duy <PHD051199@gmail.com>",
+  "repository": "https://github.com/bwv-duy-ph/ec2-research",
+  "author": "Phạm Duy <duy.ph@briwell-vn.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "node dist/index.js",

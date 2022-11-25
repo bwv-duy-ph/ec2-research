@@ -5,7 +5,10 @@ WORKDIR /app/ec2-research
 
 COPY package.json yarn.lock ./
 RUN yarn install
+
 COPY . . 
+
+RUN yarn build
 
 EXPOSE 8080
 
