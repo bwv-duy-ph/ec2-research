@@ -12,7 +12,7 @@ app.use(express.json());
 app.get("/", (_, res) => res.jsonp({ status: "OK" }));
 
 // test branch 1
-
+// test branch 2
 app.use(
   "/graphql",
   graphqlHTTP({
