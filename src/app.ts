@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (_, res) => res.jsonp({ status: "OK" }));
+app.get("/", (_, res) => res.jsonp({ status: "deploy 2022/12/14" }));
 
 app.use(
   "/graphql",
